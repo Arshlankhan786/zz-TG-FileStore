@@ -2,7 +2,8 @@
 
 import datetime
 import motor.motor_asyncio
-from configs import Config
+# from configs import Config
+from config import DATABASE_URL, DATABASE_NAME
 
 
 class Database:
@@ -76,4 +77,4 @@ class Database:
         return banned_users
 
 
-db = Database(Config.DATABASE_URL, Config.DATABASE_NAME)
+# db = Database(Config.DATABASE_URL, Config.DATABASE_NAME)
